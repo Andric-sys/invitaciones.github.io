@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box; /* Aplicar a todo el documento */
+
+}
+
+/* Configuración de la sección */
+.section {
+    height: 100vh; /* La sección ocupa toda la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    
+    background-position: center; /* Centrar la imagen */
+    background-size: cover; /* La imagen se ajusta al contenedor sin cortar ni distorsionar */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-attachment: fixed; /* Mantener el efecto de fondo fijo */
+}
+
+.titulo1, .nombre, .fechaCumple, .contador {
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-shadow: 2px 2px 0px #000, /* Sombra hacia abajo-derecha */
+                 -2px -2px 0px #000, /* Sombra hacia arriba-izquierda */
+                 -2px 2px 0px #000, /* Sombra hacia abajo-izquierda */
+                 2px -2px 0px #000; /* Sombra hacia arriba-derecha */
+}
+
+
+#music-player{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Color de fondo del reproductor */
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra para el reproductor */
+}
+
+
+/* Sección 1: Imagen de fondo y estilos */
+#section1 {
+    background-image: url('img/pag1.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo1 {
+    font-family: 'DM Serif Text';
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nombre {
+    font-family: 'Beau Rivage';
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.fechaCumple {
+    font-family: 'DM Serif Text';
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Sección 2: Imagen de fondo */
+#section2 {
+    background-image: url('img/imagen1.jpg');
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Text';
+}
+
+/* Sección 3: Imagen de fondo */
+#section3 {
+    background-image: url('img/imagen2.jpg');
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Text';
+}
+
+.flores {
+    width: 148px;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Sección 4: Vacía con imagen de fondo */
+#section4 {
+    background-image: url('img/pag3.jpg');
+}
+
+/* Sección 5: Estilos de la Ceremonia y Recepción */
+/* Estilos generales para la sección */
+#section5 {
+    background-image: url('img/imagen3.jpg');
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box; /* Incluir padding y borde en el tamaño total del elemento */
+
+}
+
+/* Estilos de las imágenes */
+.imgIglesia, .imgRecep {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contenedor de los eventos */
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para los eventos, con flexbox */
+.event-left, .event-right {
+    flex: 1;
+    text-align: center;
+    min-width: 300px; /* Asegura que los elementos no sean demasiado pequeños */
+    box-sizing: border-box;
+}
+
+/* Botón de estilo general */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .event-info {
+        flex-direction: column;
+        align-items: center;
+        font-size: 70%;
+    }
+
+    .event-left, .event-right {
+        max-width: 100%; /* Asegura que ocupen el 100% del ancho disponible */
+        font-size: auto;
+    }
+
+    .imgIglesia, .imgRecep {
+        width: 40%; /* Imágenes adaptadas a pantallas más pequeñas */
+        max-width: 900%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* Sección 6: Vacía con imagen de fondo */
+#sectionFoto {
+    background-image: url('img/pag3.jpg');
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Text';
+}
+
+
+
+/* Sección 6: Vestimenta*/
+/* Estilos para la sección 6 */
+#section6 {
+    background-image: url('img/imagen4.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
+    font-family: 'DM Serif Text';
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+#section6 h2 {
+    font-size: 2.5em; /* Tamaño de fuente grande para pantallas grandes */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#section6 h3 {
+    font-size: 1.8em;
+    color: #000000;
+    margin: 10px 0;
+}
+
+/* Imagen de vestimenta */
+.vestimenta {
+    width: 50% !important; 
+    max-width: 500px; /* Limitar el ancho máximo de la imagen */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    #section6 h2 {
+        font-size: 1.5em; /* Reducir el tamaño de la fuente en pantallas medianas */
+    }
+
+    #section6 h3 {
+        font-size: 1em;
+    }
+
+    .vestimenta {
+        max-width: 90%; /* Reducir el ancho máximo de la imagen para tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    #section6 h2 {
+        font-size: 1.5em; /* Ajustar tamaño de fuente para móviles */
+    }
+
+    #section6 h3 {
+        font-size: 1em;
+    }
+
+    .vestimenta {
+        max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    }
+
+    #section6 {
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f0f8ff;
+}
+
+
+
+/* Estilos para la sección específica con ID #section9 */
+/* Estilos para la sección específica con ID #section9 */
+#section8 {
+    background-image: url('img/imagen1.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+#section8 .titulo{
+    font-family: 'Beau Rivage';
+}
+
+.item-left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.item-right{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.cajon1{
+    width: 35%;
+    height: 70px;
+    background-color: #BFD1FF;
+    border: 2px solid #ddd;     /* Borde con color y grosor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    border-radius: 15px;
+    margin-left: 15%;
+}
+.cajon2{
+    width: 310px;
+    height: 70px;
+    background-color: #BFD1FF;
+    border: 2px solid #ddd;     /* Borde con color y grosor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.icono{
+    width: 60px;
+    height: 60px;
+}
+
+.icono2{
+    width: 60px;
+    height: 60px;
+    padding-left: 45%;
+}
+
+.subtitulo1{
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Beau Rivage';
+    
+}
+
+.hora{
+    margin: 0;
+    font-size: 80%;
+    font-family: 'DM Serif Text';
+}
+
+.triangulo1 {
+    margin-top:25px;
+    margin-right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #BFD1FF; /* Color del triángulo */
+    transform: rotate(90deg);
+}
+
+.triangulo2 {
+    margin-top:25px;
+    margin-left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #BFD1FF; /* Color del triángulo */
+    transform: rotate(-90deg);
+}
+
+/* Sección 9: cartas */
+#section9 {
+    background-image: url('img/imagen2.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+#section9 h3{
+    margin-top: 25px;
+    font-family: 'Beau Rivage';
+    padding-top: 50px;
+    
+}
+
+#section9 img{
+    height: 100px;
+    width: auto;
+}
+
+#section9 .sub{
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+#section10 {
+    background-image: url('img/pag4.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la sección de confirmación */
+#section11 {
+    background-image: url('img/imagen3.jpg');
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    font-family: 'DM Serif Text';
+}
+
+#confirmar-btn {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#confirmar-btn:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+#formulario {
+    margin-top: 20px;
+}
+
+#nombre {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#enviar-btn {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#enviar-btn:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+
+
+
+/* Sección 12: WhatsApp */
+#section12 {
+    background-image: url('img/imagen1.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bottonwhats {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
